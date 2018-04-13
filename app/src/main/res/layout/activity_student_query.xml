@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nekfh.androidproject.student_query"
+    tools:layout_editor_absoluteY="73dp">
+
+    <Button
+        android:id="@+id/View_btn2"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="18dp"
+        android:text="View"
+        app:layout_constraintEnd_toStartOf="@+id/sort"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:hint="result"
+        android:textSize="20sp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/sort"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="34dp"
+        android:layout_marginEnd="84dp"
+        android:text="sort"
+        app:layout_constraintBottom_toTopOf="@+id/txtid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/View_btn2"
+        app:layout_constraintTop_toBottomOf="@+id/result" />
+
+    <Button
+        android:id="@+id/updatebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="74dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginStart="85dp"
+        android:text="Update"
+        android:onClick="moveToUpdate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/deletebtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtid" />
+
+    <Button
+        android:id="@+id/deletebtn"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginTop="23dp"
+        android:text="Delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/updatebtn"
+        app:layout_constraintTop_toBottomOf="@+id/txtid" />
+
+    <EditText
+        android:id="@+id/txtid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="enter id here"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/updatebtn"
+        app:layout_constraintStart_toStartOf="@+id/updatebtn"
+        app:layout_constraintTop_toBottomOf="@+id/sort" />
+
+</android.support.constraint.ConstraintLayout>
