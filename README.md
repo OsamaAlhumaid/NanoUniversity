@@ -1,7 +1,7 @@
 # NanoUniversity
 Major components of university system.
 
-- Mysql DB
+- SQLite
 - Store name,ID,hours and GPA.
 - Sort the records ascending(e.g GPA)
 - Delete and Update records.
