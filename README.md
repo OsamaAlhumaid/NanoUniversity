@@ -7,4 +7,3 @@ Major components of university system.
 - Delete and Update records.
 
 
-![alt text](https://i.imgur.com/f40TziZ.png)
